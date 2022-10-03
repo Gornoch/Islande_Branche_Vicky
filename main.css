@@ -1,0 +1,17 @@
+@import url(font.css);
+
+header
+{
+    position:relative;
+    width: 1920px;
+    height: 356px;
+    left: 0px;
+    top: 0px;
+    background-color: #598990;
+}
+
+a
+{
+    text-decoration: none;
+}
+
