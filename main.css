@@ -1,17 +1,312 @@
 @import url(font.css);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{margin: 0; padding: 0;}
+
+html
+{
+    background-color: #BCC8CA;
+    
+}
+
+hr{
+    border: 1px solid white;
+}
+
+
+
+main hr 
+{
+    margin-bottom: 50px;
+    
+}
 
 header
 {
     position:relative;
-    width: 1920px;
-    height: 356px;
-    left: 0px;
-    top: 0px;
+    width: 100%;
+    height: 250px;
     background-color: #598990;
+}
+
+p 
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    line-height: 2;
+    text-align: center;
+    color: #3D3D3D;
 }
 
 a
 {
     text-decoration: none;
+}
+
+.langage
+{
+    
+    display: flex;
+    justify-content: right;
+    height: 30px;
+    padding: 10px 60px 0px 0px;
+}
+
+h1
+{
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-style: normal;
+    
+}
+
+h2
+{
+    position: absolute;
+    top: 45%;
+    left: 50% ;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-style: normal;
+}
+
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
+    color: #598990;
+    margin-bottom: 20px;
+}
+
+header hr:first-of-type{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 25px 25% 0px;
+    
+    
+
+}
+
+.classFlag
+{
+    width: 40px;
+    margin-right: 0.25vw;
+}
+
+.homepage{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+nav 
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0px 0px;    
+    text-align: center;
+    
+}
+
+
+.mainMenu a:hover {
+    background-color: #a2a2a3;
+    color:white;
+}
+.homepage div img
+{
+     
+    filter: brightness(200%) grayscale(150%);
+    /* border: 1px solid black;  */
+    width: 250px;
+    
+}
+
+header nav a{
+    color: black;
+    display: flex;
+    width: 280px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 25px;
+    /* border: 2px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    box-shadow: rgb(31, 30, 30) 5px 5px 2px;
+}
+
+.mainPic{
+    position: relative;
+    width: 100%;
+    max-height: 418px;
+    object-fit:cover;
+    object-position: 100% 90% ;
+    margin-bottom: 20px;
+}
+
+
+
+.aPropos{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+
+.aPropos p 
+{
+    width: 750px;
+    padding: 20px 20px;
+}
+
+.aPropos img
+{
+    float: right;
+    width:  750px;
+    height: 750px;
+    object-fit: cover;
+    object-position: 100% 5%;
+}
+
+.CTA
+{
+    
+    margin: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+    
+    
+    
+}
+
+.CTA a 
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 52px;
+    color:white;
+    background-color: #CE5F77;
+    padding: 20px 30px;
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+
+
+.alentours{
+    display: flex;
+    justify-content: center;
+}
+
+.alentours p {
+    width: 750px;
+    padding: 20px 20px;
+}
+
+.alentours img
+{
+    float: left;
+    width:  750px;
+    height: 750px;
+    object-fit: cover;
+    object-position: 100% 75%;
+}
+
+h3:first-of-type
+{
+    margin-left: 20%;
+}
+
+h3:nth-of-type(2)
+{
+    text-align: right;
+    margin-right: 20%;
+}
+h3:last-of-type
+{
+    margin: 4vh 0px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+
+#carousel 
+{
+    display: flex;
+    justify-content: center;
+}
+
+#carousel img
+{
+    width: 24%;
+    height: 500px;
+    margin: 0px 5px;
+}
+
+footer
+{
+    background-color: rgba(68, 68, 68, 0.5);
+    margin: 50px 0px 0px 0px;
+    color: #424242;
+    height: 250px;
+    
+
+}
+
+.classRS a
+{
+    margin: 0px 20px;
+    color: white;
+
+}
+
+footer div address
+{
+    width: 25%;
+    font-size: 20px;
+}
+
+footer ul li
+{
+    list-style-type:none;
+    
+}
+
+footer div
+{
+    display: flex;
+    height: 250px;
+    justify-content: space-around;
+    align-items:center;
+}
+
+
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+
+.classRS img
+{
+    display: flex;
+    width: 5vw;
+    filter: grayscale() brightness();
+    flex-direction: column;
 }
 
