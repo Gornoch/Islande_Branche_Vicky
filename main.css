@@ -1,4 +1,6 @@
 @import url(produit.css);
+@import url(listeproduit.css);
+@import url(services.css);
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
@@ -111,11 +113,13 @@ header hr:first-of-type{
 nav 
 {
     display: flex;
+    position: sticky;
     justify-content: space-around;
     padding: 25px 0px 0px;    
     text-align: center;
     
 }
+
 
 
 .mainMenu a:hover {
@@ -203,7 +207,13 @@ header nav a{
     padding: 20px 30px;
     border-radius: 10px;
     align-items: center;
+    box-shadow: 6px 6px 3px #3D3D3D;
+}
 
+.CTA a:hover
+{
+    color: #CE5F77;
+    background-color: white;
 }
 
 
@@ -321,11 +331,11 @@ footer a:hover
 
 .retourHaut
 {
-    display: flex;
-    background-color: #CE5F77;
+    position: sticky;
+    bottom: 30px;
+    margin: 30px;
     width: fit-content;
     padding: 10px 20px;
-    margin: 25px;
     border-radius: 45px;
     -webkit-border-radius: 45px;
     -moz-border-radius: 45px;
@@ -336,26 +346,61 @@ footer a:hover
 
 .retourHaut a i 
 {
-    color: white;
-    font-size: 45px;
+    color: #ffffff;
+    background-color: #CE5F77;
+    border-radius: 25px;
+    font-size: 60px;
+    width: 75px;
+    text-align: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 
-.container
+
+.retourHaut a i:hover
+{
+    color: #CE5F77;
+    background-color: #ffffff;
+} 
+
+.contact
 {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    width:90%;
-}
-
-.container>div
-{
-    display: flex;
     width: 50%;
     margin: auto;
-    border: 1px solid black;
-    flex-grow: 1  ;
-    flex-shrink: 1;
-    
+    border: #598990 5px solid;
+}
 
+.contact h3
+{
+    display: block;
+    margin: auto;
+}
+
+
+.contact div
+{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    width: 50%;
+}
+
+.contact>div>label
+{
+    font-size: 20px;
+    text-align: center;
+    width: 250px;
+    
+}
+
+textarea
+{
+    resize: none;
+    justify-content: center;
 }

@@ -23,6 +23,9 @@
 {
     display: flex;
     width: 50%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: 50% 100%;
     float: left;
     margin: 20px;
     
@@ -42,6 +45,13 @@
     font-size: 52px;
     border-radius: 10px;
     align-items: center;
+    box-shadow: 6px 6px 3px #3d3d3d;
+}
+
+.logement a:hover
+{
+    color: #CE5F77;
+    background-color: white;
 }
 
 .logement form
@@ -61,6 +71,8 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+
+
 
 .logement form input
 {
@@ -146,6 +158,13 @@ article>a
     margin: 0 auto 10px;
     border-radius: 10px;
     align-items: center;
+    box-shadow: 4px 4px 3px #3d3d3d;
+}
+
+article>a:hover
+{
+    color: #598990;
+    background-color: white;
 }
 
 article>img
