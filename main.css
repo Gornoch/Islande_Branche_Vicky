@@ -1,4 +1,4 @@
-@import url(font.css);
+@import url(produit.css);
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
@@ -263,34 +263,38 @@ footer
     background-color: rgba(68, 68, 68, 0.5);
     margin: 50px 0px 0px 0px;
     color: #424242;
-    height: 250px;
+    height: 150px;
     
 
+}
+
+footer a
+{
+    color: white;
 }
 
 .classRS a
 {
     margin: 0px 20px;
-    color: white;
 
 }
 
 footer div address
 {
-    width: 25%;
-    font-size: 20px;
+    width: 300px;
+    font-size: 30px;
+    color: white;
 }
 
 footer ul li
 {
     list-style-type:none;
-    
 }
 
 footer div
 {
     display: flex;
-    height: 250px;
+    height: 150px;
     justify-content: space-around;
     align-items:center;
 }
@@ -304,9 +308,54 @@ footer a:hover
 
 .classRS img
 {
-    display: flex;
-    width: 5vw;
-    filter: grayscale() brightness();
+    width: 3vw;
+    /* filter: grayscale() brightness(); */
     flex-direction: column;
 }
 
+#paiement
+{
+    width: 15vw;
+}
+
+
+.retourHaut
+{
+    display: flex;
+    background-color: #CE5F77;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 25px;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+
+}
+
+.retourHaut a i 
+{
+    color: white;
+    font-size: 45px;
+}
+
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    width:90%;
+}
+
+.container>div
+{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+    flex-grow: 1  ;
+    flex-shrink: 1;
+    
+
+}
