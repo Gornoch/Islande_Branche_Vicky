@@ -1,50 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
     <title>Nos hébergements | Sofandi Múrmeldýr</title>
 </head>
+ <body>
 
-<body>
-    <header>
-        <form action="post" class="langage">
-            <label for="idLang"><img class="classFlag" src="flags/french flag.png" alt=""></label>
-            <select name="" id="idLang">
-                <option value="fr">Français</option>
-                <option value="en">English</option>
-                <option value="is">íslenskur</option>
-            </select>
-        </form>
-
-
-
-        <a href="/index" class="homepage">
-            <div><img src="logo.png" alt="Logo Site" style="height: fit-content;"></div>
-            <h1>Sofandi Múrmeldýr</h1>
-            <h2>Les marmottes endormies</h2>
-
-        </a>
-
-        <hr>
-
-
-
-
-    </header>
-
-    <div class="stickyMenu">
-        <nav class="mainMenu">
-            <a href="/classiques">Hebergements classiques</a>
-            <a href="/insolite">Hebergements insolites</a>
-            <a href="/services">Services</a>
-            <a href="/contact">Contact</a>
-        </nav>
-    </div>
+<%- include("./partials/header.ejs") %>
 
     <main>
         <h3>Nos hébergements</h3>
@@ -53,12 +19,12 @@
             <article>
                 <h3>Classiques</h3>
                 <img src="grastein/Webp.net-resizeimage-copy-1024x768.jpg" alt="">
-                <a href="/classiques">Hebergements Classiques</a>
+                <a href="/hebergements-classiques">Hebergements Classiques</a>
             </article>
             <article>
                 <h3>Insolites</h3>
                 <img src="nuit-étoilée.jpg" alt="">
-                <a href="/insolites">Hebergements Insolites</a>
+                <a href="/hebergements-insolites">Hebergements Insolites</a>
             </article>
         </div>
         <div class="retourHaut">
@@ -66,7 +32,6 @@
         </div>
 
     </main>
-   
     <footer>
         <div>
 
@@ -94,7 +59,6 @@
             </div>
         </div>
     </footer>
-
 
     <script src="https://kit.fontawesome.com/d4b750efd2.js" crossorigin="anonymous"></script>
 </body>

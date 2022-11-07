@@ -1,49 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
-    <title>Hébergements Classiques | Sofandi Múrmeldýr</title>
+    <title>Nos hébergements classiques | Sofandi Múrmeldýr</title>
 </head>
+ <body>
 
-<body>
-    <header>
-        <form action="post" class="langage">
-            <label for="idLang"><img class="classFlag" src="flags/french flag.png" alt=""></label>
-            <select name="" id="idLang">
-                <option value="fr">Français</option>
-                <option value="en">English</option>
-                <option value="is">íslenskur</option>
-            </select>
-        </form>
-
-
-
-        <a href="/index" class="homepage">
-            <div><img src="logo.png" alt="Logo Site" style="height: fit-content;"></div>
-            <h1>Sofandi Múrmeldýr</h1>
-            <h2>Les marmottes endormies</h2>
-
-        </a>
-
-        <hr>
-
-
-
-
-    </header>
-    <div class="stickyMenu">
-        <nav class="mainMenu">
-            <a href="/classiques">Hebergements classiques</a>
-            <a href="/insolite">Hebergements insolites</a>
-            <a href="/services">Services</a>
-            <a href="/contact">Contact</a>
-        </nav>
-    </div>
+<%- include("./partials/header.ejs") %>
 
     <main>
         <h3>Nos Hébergements Classiques</h3>
@@ -52,7 +19,7 @@
                 <h3>Pierre Feu</h3>
                 <img src="pierre-feu.png" alt="Pierre Feu">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, autem.</p>
-                <a href="/pierreFeu">En savoir plus</a>
+                <a href="/pierre-feu">En savoir plus</a>
 
             </article>
 
@@ -68,7 +35,7 @@
                 <h3>Pierre Eau</h3>
                 <img src="pierre-eau.jpeg" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, autem.</p>
-                <a href="/pierreEau">En savoir plus</a>
+                <a href="/pierre-eau">En savoir plus</a>
             </article>
         </div>
     </main>
