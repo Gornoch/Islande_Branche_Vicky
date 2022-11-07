@@ -1,0 +1,45 @@
+.services 
+{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
+    
+}
+
+.services>article h3{
+    height: 15%;
+}
+
+
+.services article
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 33%;
+    height: 700px;
+    margin: 20px;
+    border-radius: 25px;
+    border: 5px solid #598990;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.services article img
+{
+    display: flex;
+    max-width: 700px;
+    object-fit: cover;
+    object-position: 50% 70%;
+    
+}
+
+.services article p 
+{
+    display: flex;
+    width: 100%;
+   justify-content: center;
+}
